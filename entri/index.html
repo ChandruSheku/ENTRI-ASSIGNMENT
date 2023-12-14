@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Add  custom styles here */
+        .header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        .login-form {
+            margin: 20px auto;
+            width: 300px;
+        }
+        .signup-form {
+            margin: 20px auto;
+            width: 300px;
+        }
+        .footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="hospital-logo.png" alt="Hospital Logo" width="500" height="200">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#signup">Signup</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Header Section -->
+      <div class="header">
+          <h1>Welcome to Hospital Website</h1>
+          <p>The best place to find quality healthcare services</p>
+      </div>
+      <!-- Login Form -->
+      <div class="login-form" id="login">
+          <h2>Login</h2>
+          <form>
+              <div class="form-group">
+                  <label for="username">Username or Email</label>
+                  <input type="text" class="form-control" id="username" placeholder="Enter username or email">
+              </div>
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter password">
+              </div>
+              <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="remember">
+                  <label class="form-check-label" for="remember">Remember Me</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+          </form>
+      </div>
+      <!-- Signup Form -->
+      <div class="signup-form" id="signup">
+          <h2>Signup</h2>
+          <form>
+              <div class="form-group">
+                  <label for="fullname">Full Name</label>
+                  <input type="text" class="form-control" id="fullname" placeholder="Enter full name">
+              </div>
+              <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter password">
+              </div>
+              <div class="form-group">
+                  <label for="confirm-password">Confirm Password</label>
+                  <input type="password" class="form-control" id="confirm-password" placeholder="Confirm password">
+              </div>
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+          </form>
+      </div>
+      <!-- Footer -->
+      <div class="footer">
+          <p>© 2023 Hospital Website. All rights reserved.</p>
+      </div>
+       Bootstrap CDN
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
